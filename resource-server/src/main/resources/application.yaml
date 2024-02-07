@@ -1,0 +1,20 @@
+# H2 Database Configuration
+spring:
+  datasource:
+    url: jdbc:h2:mem:defensepointdb
+    driverClassName: org.h2.Driver
+    username: admin
+    password: admin
+  h2:
+    console:
+      enabled: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://idp.defensepoint.com/auth/realms/interview/protocol/openid-connect/certs
+
+
+# Server Port Configuration
+server:
+  port: 3333

@@ -1,0 +1,8 @@
+{
+  "realm": "interview",
+  "auth-server-url": "https://idp.defensepoint.com/auth/realms/interview/protocol/openid-connect/auth",
+  "resource": "test-client",
+  "credentials": {
+    "secret": "secret"
+  }
+}
